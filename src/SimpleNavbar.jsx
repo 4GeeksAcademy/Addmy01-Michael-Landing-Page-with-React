@@ -1,11 +1,11 @@
 import React from "react";
 
-function SimpleCard() {
+function SimpleNavbar() {
     
     return (
         <div className="counter-display">           
-            <div className="card">
-                <h1>Simple Card</h1>
+            <div className="Navbar">
+                <h1>Nav bar</h1>
             </div>
             
 
@@ -13,4 +13,4 @@ function SimpleCard() {
     );
 };
 
-export default SimpleCard
+export default SimpleNavbar

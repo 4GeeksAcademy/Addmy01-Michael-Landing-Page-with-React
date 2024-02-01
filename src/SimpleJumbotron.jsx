@@ -1,11 +1,11 @@
 import React from "react";
 
-function SimpleCard() {
+function SimpleJumbotron() {
     
     return (
         <div className="counter-display">           
-            <div className="card">
-                <h1>Simple Card</h1>
+            <div className="Navbar">
+                <h1>Jumbotron</h1>
             </div>
             
 
@@ -13,4 +13,4 @@ function SimpleCard() {
     );
 };
 
-export default SimpleCard
+export default SimpleJumbotron
