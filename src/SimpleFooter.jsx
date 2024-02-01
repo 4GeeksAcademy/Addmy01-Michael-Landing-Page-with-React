@@ -5,7 +5,7 @@ function SimpleFooter() {
     return (
         <div className="counter-display">           
             <div className="footer">
-                <h1>Nav bar</h1>
+                <h1>Footer</h1>
             </div>
             
 
