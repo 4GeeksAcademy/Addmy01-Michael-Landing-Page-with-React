@@ -10,16 +10,17 @@ import SimpleFooter from "../../SimpleFooter";
 //create your first component
 const Home = () => {
 	return (
-	<><div className="text-center">
+	<>
+	<div className="text-center">
 			<SimpleNavbar />
-		</div>
-		<div className="container">
-				<SimpleJumbotron />
-				<SimpleCard />
-			</div>
-		<div className="text-center">
-			<SimpleFooter />
-		</div>
+	</div>
+	<div className="container">
+			<SimpleJumbotron />
+			<SimpleCard />
+	</div>
+	<div className="text-center">
+		<SimpleFooter />
+	</div>
 	</>
 	);
 };
