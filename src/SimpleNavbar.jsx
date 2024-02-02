@@ -1,34 +1,38 @@
 import React from "react";
-
+import "./styles/index.css";
+import style from "./styles/index.css"
 function SimpleNavbar() {
     
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+      <div className="container-fluid bg-dark">
+        <nav className="container navbar navbar-expand-lg navbar-light d-flex justify-content-between">          
+          <div className="container">
+            <a className="navbar-brand text-white" href="#">Start Bootstrap</a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div className="collapse navbar-collapse " id="navbarText">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link text-white active " href="#">Home</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link text-light" href="#">About</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link  text-white" href="#">Service</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link  text-white" href="#">Contact</a>
+                </li> 
+              </ul>
+              
+            </div>
+        </nav>
+      </div>
 
-    <a class="navbar-brand" href="#">Start Bootstrap</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
 
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end">
-    
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        
-      
-      </ul>
-    </div>
-  </div>
-</nav>
     );
 };
 

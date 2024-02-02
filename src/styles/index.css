@@ -10,3 +10,10 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+#navbar {
+    background-color: black;
+}
+
+#nav-item {
+    background: #f12121;
+}

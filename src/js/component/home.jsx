@@ -8,20 +8,20 @@ import SimpleFooter from "../../SimpleFooter";
 
 
 //create your first component
-const Home = () => {
+function Home() {
 	return (
-	<><div className="text-center">
+		<><div className="text-center">
 			<SimpleNavbar />
 		</div>
-		<div className="container">
+			<div className="container">
 				<SimpleJumbotron />
 				<SimpleCard />
 			</div>
-		<div className="text-center">
-			<SimpleFooter />
-		</div>
-	</>
+			<div className="text-center">
+				<SimpleFooter />
+			</div>
+		</>
 	);
-};
+}
 
 export default Home;
