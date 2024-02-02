@@ -1,71 +1,44 @@
 import React from "react";
+// import ReactDOM from "react-dom";
+import PropTypes from "prop-types";
 
-function SimpleCard() {
+const SimpleCard = (props) => {
     
     return (
-        <div className="card" style={{width: "18rem"}}>
-            <img src="..." className="card-img-top" style={{width: "500px", height:"325px"}} alt="..." />
-            <div className="card-body text-center">
-                <h5 className="card-title ">Card title</h5>
-                <p className="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+        <>
+            <div className="card m-2" style={{ width: "18rem" }}>
+                <img src={props.image} className="card-img-top" style={{ width: "100%", height: "100%" }} alt="..." />
+                <div className="card-body text-center">
+                    <h5 className="card-title ">{props.title}</h5>
+                    <p className="card-text ">{props.description}</p>
+                    <a href={props.buttonURL} className="btn btn-primary">{props.buttonLabel}</a>
+                </div>
             </div>
-      </div>
+        </>
     );
 };
 
+SimpleCard.propTypes = {
+	// PropTypes here
+	image: PropTypes.string,
+	title: PropTypes.string,
+	description: PropTypes.string,
+	buttonLabel: PropTypes.string,
+	buttonURL: PropTypes.string,
+};
+
+
+
 export default SimpleCard
 
+// ReactDOM.render(
+// 	<SimpleCard
+// 		image="https://picsum.photos/500/325"
+// 		title="Coolest Card ever"
+// 		description="React is the most popular rendering library in the world"
+// 		buttonLabel="Go to the official website"
+// 		buttonURL="https://reactjs.org/"
+// 	/>,
+//     document.getElementById("root")
+// );
 
-
-
-// <img src="../img/download.png" className="card-img-top" alt="500 X 325"/>
-// <div className="card-body d-flex justify-content-center">
-//     <h5 className="card-title">Card title</h5>
-//     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-// </div>
-// <ul className="list-group list-group-flush  p-2">
-//     <div className="button d-flex justify-content-center">
-//             <a href="#" className="btn btn-primary">Call to action!</a>
-//     </div>
-// </ul>                
-// </div>
-
-// <div className="card m-2 col-3 col-md-6 col-sm-12">
-// <img src="../img/download.png" className="card-img-top" alt="500 X 325"/>
-// <div className="card-body d-flex justify-content-center">
-//     <h5 className="card-title">Card title</h5>
-//     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-// </div>
-// <ul className="list-group list-group-flush p-2">
-//     <div className="button d-flex justify-content-center">
-//             <a href="#" className="btn btn-primary">Call to action!</a>
-//     </div>
-// </ul>                
-// </div>
-// <div className="card m-2 col-3 col-md-6 col-sm-12">
-// <img src="../img/download.png" className="card-img-top" alt="500 X 325"/>
-// <div className="card-body d-flex justify-content-center">
-//     <h5 className="card-title">Card title</h5>
-//     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-// </div>
-// <ul className="list-group list-group-flush  p-2">
-//     <div className="button d-flex justify-content-center">
-//             <a href="#" className="btn btn-primary">Call to action!</a>
-//     </div>
-// </ul>                
-// </div>
-
-// <div className="card m-2 col-md-6 col-sm-12">
-// <img src="../img/download.png" className="card-img-top" alt="500 X 325"/>
-// <div className="card-body d-flex justify-content-center">
-//     <h5 className="card-title">Card title</h5>
-//     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-// </div>
-// <ul className="list-group list-group-flush p-2">
-//     <div className="button d-flex justify-content-center">
-//             <a href="#" className="btn btn-primary">Call to action!</a>
-//     </div>
-// </ul>                
-// </div>
-// </div>
