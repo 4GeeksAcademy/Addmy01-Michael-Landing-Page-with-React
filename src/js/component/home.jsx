@@ -10,17 +10,18 @@ import SimpleFooter from "../../SimpleFooter";
 //create your first component
 function Home() {
 	return (
-		<><div className="text-center">
-			<SimpleNavbar />
-		</div>
-			<div className="container">
-				<SimpleJumbotron />
-				<SimpleCard />
-			</div>
-			<div className="text-center">
-				<SimpleFooter />
-			</div>
-		</>
+	<>
+	<div className="text-center">
+		<SimpleNavbar />
+	</div>
+	<div className="d-flex justify-content-center flex-column align-items-center mx-auto p-2">
+		<SimpleJumbotron  className="mx-auto" />
+		<SimpleCard  className="mx-auto" />
+	</div>
+	<div className="text-center">
+		<SimpleFooter />
+	</div>
+	</>
 	);
 }
 
