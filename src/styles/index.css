@@ -17,3 +17,8 @@
 #nav-item {
     background: #f12121;
 }
+
+.navbar-toggler-icon {
+    background-color:  white;
+    border-radius: 10%;
+  }

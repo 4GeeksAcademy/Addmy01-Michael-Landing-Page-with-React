@@ -15,8 +15,8 @@ function Home() {
 		<SimpleNavbar />
 	</div>
 	<div className="d-flex justify-content-center flex-column align-items-center mx-auto p-2">
-		<SimpleJumbotron  className="mx-auto" />
-		<SimpleCard  className="mx-auto" />
+		<SimpleJumbotron />
+		<SimpleCard />
 	</div>
 	<div className="text-center">
 		<SimpleFooter />
