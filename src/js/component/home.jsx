@@ -17,7 +17,7 @@ function Home() {
 	<div className="d-flex justify-content-center flex-column align-items-center mx-auto ">
 		<SimpleJumbotron  className="mx-auto" />
 		<div className="container-flex">
-			<div className="row ">
+			<div className="row justify-content-center">
 				<div className="col">
 					<SimpleCard  className="mx-auto"
 						image="https://picsum.photos/id/237/250/250"
