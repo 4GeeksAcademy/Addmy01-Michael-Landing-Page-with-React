@@ -17,13 +17,14 @@ function SimpleNavbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse color-black" id="navbarNavAltMarkup">
-            <div className="navbar-nav ms-auto">
+          
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul className="navbar-nav ms-auto">
               <a className="nav-link active" href="#">Home</a>
               <a className="nav-link" href="#">About</a>
               <a className="nav-link" href="#">Services</a>
               <a className="nav-link" href="#">Contact</a>
-            </div>
+            </ul>
           </div>
         </div>
       </nav>

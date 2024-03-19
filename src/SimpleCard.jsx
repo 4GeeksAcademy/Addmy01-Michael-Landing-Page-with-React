@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const SimpleCard = (props) => {
   return (
-    <div className="text-center">
+    <div className="d-flex justify-content-center col-xxl-3 col-xxl-3 col-lg-4 col-md-5 col-sm-6">
       <div className="card text-center m-2" style={{ width: "18rem" }}>
         <img src={props.image} className="card-img-top" style={{ width: "100%", height: "100%" }} alt="..." />
         <div className="card-body text-center">

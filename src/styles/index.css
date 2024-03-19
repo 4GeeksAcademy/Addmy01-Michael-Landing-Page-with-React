@@ -10,15 +10,4 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-#navbar {
-    background-color: black;
-}
 
-#nav-item {
-    background: #f12121;
-}
-
-.navbar-toggler-icon {
-    background-color:  white;
-    border-radius: 10%;
-}
